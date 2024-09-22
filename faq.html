@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> 
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            },
+            fontFamily: {
+                lexend: ['Lexend'],
+            },
+            backgroundImage: {
+                // banner: "url('assets/banner.png')"
+            },
+          },
+        }
+    </script>
+
+    <title>Donate Bangladesh</title>
+</head>
+<body class="font-lexend relative">
+
+    <!-- Header starts -->
+    <header class="w-full sticky top-0 z-10">
+
+        <!-- Navbar starts -->
+        <div class="w-full bg-[#F9F7F3] pt-1 pb-3 sm:pt-2 sm:pb-4 lg:pt-3 lg:pb-5">
+            <div class="navbar max-w-[95%] sm:max-w-[85%] lg:max-w-[79.167%] min-[1920px]:max-w-[95rem] mx-auto bg-transparent">
+                <div class="navbar-start">
+                    <a href="index.html" class="btn btm-sm sm:btn-md border-none w-16 md:w-28 bg-[#B4F461] text-[#111111] text-sm md:text-lg font-semibold">Home</a>
+                </div>
+                <div class="navbar-center">
+                    <a href="#" class="text-sm md:text-xl font-semibold text-[#111111] flex items-center gap-2 md:gap-3">
+                      <img class="w-8 md:w-12 h-8 md:h-12" src="assets/logo.png" alt="">
+                      <span class="hidden min-[360px]:inline-flex">Donate Bangladesh</span></a>
+                </div>
+                <div class="navbar-end">
+                    <p class="text-sm md:text-xl font-medium text-[#111111]/[0.7] flex items-center gap-1 sm:gap-2 md:gap-3">
+                        <img class="w-6 md:w-10 h-6 md:h-10" src="assets/coin.png" alt="">
+                        <span>5500</span> <span class="hidden md:inline-flex">BDT</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar ends -->
+
+    </header>
+    <!-- Header ends -->
+
+    <!-- FAQ section starts -->
+    <main class="w-full py-10 sm:py-16 lg:py-20">
+        <div class="max-w-[90%] sm:max-w-[80%] min-[1920px]:max-w-[95rem] mx-auto space-y-3 sm:space-y-4 lg:space-y-5">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 md:mb-8 lg:mb-10">Frequently Asked Questions</h1>
+
+            <!-- Accordion-1 -->
+            <div class="collapse w-full bg-base-100 rounded-none border-l-4 border-[#e0a52f]">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title w-full text-lg/8 md:text-xl/9 lg:text-2xl/10 font-semibold">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content w-full text-sm/6 sm:text-base/7 lg:text-lg/8 text-[#111111]/[0.7] font-normal">
+                  <p>The DOM is a programming interface for web documents. It represents the page structure as a tree of objects, allowing JavaScript to access and manipulate HTML elements dynamically.</p>
+                </div>
+            </div>
+
+            <!-- Accordion-2 -->
+            <div class="collapse w-full bg-base-100 rounded-none border-l-4 border-[#e0a52f]">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-lg/8 md:text-xl/9 lg:text-2xl/10 font-semibold">How do you select an element from the DOM?</div>
+                <div class="collapse-content text-sm/6 sm:text-base/7 lg:text-lg/8 text-[#111111]/[0.7] font-normal">
+                  <p>You can select elements using methods like document.getElementById(), document.querySelector(), or document.getElementsByClassName() to target specific elements by their ID, class, or tag.</p>
+                </div>
+            </div>
+
+            <!-- Accordion-3 -->
+            <div class="collapse w-full bg-base-100 rounded-none border-l-4 border-[#e0a52f]">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-lg/8 md:text-xl/9 lg:text-2xl/10 font-semibold">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content text-sm/6 sm:text-base/7 lg:text-lg/8 text-[#111111]/[0.7] font-normal">
+                  <p>Event delegation allows you to handle events at a parent element level, capturing events from child elements. It improves performance and simplifies code by reducing the need to attach individual listeners to each child.</p>
+                </div>
+            </div>
+
+            <!-- Accordion-4 -->
+            <div class="collapse w-full bg-base-100 rounded-none border-l-4 border-[#e0a52f]">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title w-full text-lg/8 md:text-xl/9 lg:text-2xl/10 font-semibold">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content w-full text-sm/6 sm:text-base/7 lg:text-lg/8 text-[#111111]/[0.7] font-normal">
+                  <p>You can use methods like setAttribute() and getAttribute() for attributes. For styles, you can modify the style property, such as element.style.color = "red" to change an element's appearance.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FAQ section ends -->
+
+    <footer class="w-full h-20 lg:h-28 bg-[#F9F7F3]"></footer>
+</body>
+</html>
