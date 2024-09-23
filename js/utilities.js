@@ -14,16 +14,3 @@ function getInnerTextById(id) {
     const innerText = document.getElementById(id).innerText;
     return innerText;
 }
-
-function validateInputText(id) {
-    document.getElementById(id).addEventListener('keyup', function (event) {
-
-        const text = event.target.value;
-        if (typeof parseInt(text) === 'number' && parseInt(text) > 0) {
-            document.getElementById('donate-noakhali-btn').removeAttribute('disabled');
-        }
-        else {
-            document.getElementById('donate-noakhali-btn').setAttribute('disabled', true);
-        }
-    })
-}
