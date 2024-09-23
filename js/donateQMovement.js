@@ -1,7 +1,7 @@
 document.getElementById('donate-qmovement-btn').addEventListener('click', function() {
 
     const text = getInputTextById('donate-amount-qmovement');
-    if (typeof parseInt(text) !== 'number' && parseInt(text) <= 0) {
+    if (isNaN(text) === true || parseInt(text) < 0) {
         document.getElementById('donate-amount-qmovement').value = "";
         alert("Invalid input amount! Please enter the valid input.");
     } else {
