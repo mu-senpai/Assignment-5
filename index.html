@@ -61,9 +61,9 @@
         <!-- Navbar ends -->
 
         <!-- Toggle buttons -->
-        <div class="max-w-[95%] sm:max-w-[85%] lg:max-w-[79.167%] min-[1920px]:max-w-[95rem] mx-auto bg-white pt-8 pb-5 sm:pt-12 sm:pb-6 lg:pt-16 lg:pb-8 flex items-center justify-center gap-5">
-            <button class="btn btm-sm sm:btn-md border-none w-20 md:w-36 bg-[#B4F461] text-[#111111] text-sm md:text-lg font-semibold">Donation</button>
-            <button class="btn btm-sm sm:btn-md border border-[#111111]/[0.3] w-20 md:w-36 bg-white text-[#111111]/[0.7] text-sm md:text-lg font-semibold">History</button>
+        <div class="max-w-[95%] sm:max-w-[85%] lg:max-w-[79.167%] min-[1920px]:max-w-[95rem] mx-auto bg-transparent backdrop-blur-lg pt-8 pb-5 sm:pt-12 sm:pb-6 lg:pt-16 lg:pb-8 flex items-center justify-center gap-5">
+            <button id="donate-toggle-btn" class="btn btm-sm sm:btn-md border-none w-20 md:w-36 bg-[#B4F461] text-[#111111] text-sm md:text-lg font-semibold">Donation</button>
+            <button id="history-toggle-btn" class="btn btm-sm sm:btn-md border-[#111111]/[0.3] w-20 md:w-36 bg-white text-[#111111]/[0.7] text-sm md:text-lg font-semibold">History</button>
         </div>
 
     </header>
@@ -72,7 +72,7 @@
     <main class="w-full pb-10 sm:pb-16 lg:pb-20">
         
         <!-- Donate cards section starts -->
-        <section class="max-w-[95%] sm:max-w-[85%] lg:max-w-[79.167%] min-[1920px]:max-w-[95rem] mx-auto space-y-8 md:space-y-6 lg:space-y-8">
+        <section id="donate-section" class="max-w-[95%] sm:max-w-[85%] lg:max-w-[79.167%] min-[1920px]:max-w-[95rem] mx-auto space-y-8 md:space-y-6 lg:space-y-8">
 
             <!-- Card-1 starts -->
             <div class="w-full flex flex-col md:flex-row gap-3 sm:gap-5 lg:gap-8 bg-base-100 p-3 sm:p-5 lg:p-8 border border-[#111111]/[0.1] rounded-2xl">
@@ -177,7 +177,7 @@
         <!-- Donate cards section -->
 
         <!-- History section starts -->
-        <section class="hidden max-w-[95%] sm:max-w-[85%] lg:max-w-[79.167%] min-[1920px]:max-w-[95rem] mx-auto space-y-3 lg:space-y-4"> 
+        <section id="history-section" class="hidden max-w-[95%] sm:max-w-[85%] lg:max-w-[79.167%] min-[1920px]:max-w-[95rem] mx-auto space-y-3 lg:space-y-4"> 
             <!-- <div class="card bg-base-100 w-full border border-[#1111111A] rounded-2xl">
                 <div class="card-body">
                     <h3 class="text-sm sm:text-base lg:text-xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
@@ -190,5 +190,8 @@
     </main>
 
     <footer class="w-full h-20 lg:h-28 bg-[#F9F7F3]"></footer>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/toggle.js"></script>
 </body>
 </html>
